@@ -68,7 +68,12 @@ margin:0px;
 }
 
 textarea{
-    width:100%
+width:720px;
+height:360px;
+}
+
+textarea#excerpt{
+height:120px;
 }
 
 /* --------------left navi------------- */
@@ -85,3 +90,12 @@ clear: both;
 margin: 0px;
 padding: 0px;
 text-align: right; }
+
+/* -----------submit_form--------------------------- */
+#submit_form {
+    margin: 0px 0px 0px 20px;
+}
+
+input#title{
+    width:590px;
+}
