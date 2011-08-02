@@ -6,6 +6,13 @@ function confirm_query($result_set){
     }
 }
 
+function get_all_subjects(){
+    global $connection;
+    $query = "SELECT * FROM /*articles*/ ORDER BY /*position*/ ASC";
+    $subject_set = mysql_query($query, $connection);
+    confirm_query($subject_set);
+    return $subject_set;
+}
 
 function get_subject_by_id ($subject_id){
     global $connection;
@@ -21,6 +28,9 @@ function get_subject_by_id ($subject_id){
         return NULL;
     }
 }
+
+
+
 
 
 ?>

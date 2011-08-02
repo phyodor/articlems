@@ -17,10 +17,10 @@ Excerpt:<br />
 Article:<br />
 <textarea id="body" name="body"></textarea><br />
 Choose Category:<br />
-Business <input type="checkbox" value="category" name="business" />
-Tech <input type="checkbox" value="category" name="tech"/>
-Science <input type="checkbox" value="category" name="science"/>
-Automotive <input type="checkbox" value="category" name="automotive"/><br />
+Business <input type="checkbox" value="business" name="category1" />
+Tech <input type="checkbox" value="tech" name="category2"/>
+Science <input type="checkbox" value="science" name="category3"/>
+Automotive <input type="checkbox" value="automotive" name="category4"/><br />
 <input type="submit" value="Publish" />
 </form>
 </div>
