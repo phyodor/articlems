@@ -29,8 +29,21 @@ function get_subject_by_id ($subject_id){
     }
 }
 
-
-
-
-
+function submitArticle ($title, $author, $excerpt, $body, $date){
+    $query_article = "INSERT INTO articles (
+    title, author, excerpt, body, date
+    ) VALUES (
+    {'$title'}, {'$author'}, {'$excerpt'}, {'$body'}, {'$date'}
+    )"; functions.php
+    if (mysql_query($query_article, $connection)){
+    // Success
+    echo "Article added!"; 
+    //header("Location: ");
+    //exit;
+    }else {
+        //error
+        echo "<p> Article not added</p>";
+        echo "<p>" . mysql_error() . "</p>";
+        };
+    }
 ?>
